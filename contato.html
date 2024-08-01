@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - InboxSender</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        .nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Contato</h1>
+    </div>
+
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="planos.html">Planos</a>
+        <a href="contato.html">Contato</a>
+    </div>
+
+    <div class="content">
+        <h2>Entre em Contato</h2>
+        <p>Se você tiver alguma dúvida ou precisar de mais informações, por favor, entre em contato conosco através dos meios abaixo:</p>
+
+        <div class="form-container">
+            <form action="mailto:joseosvaldosouza99@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </form>
+        </div>
+
+        <h2>Informações de Contato</h2>
+        <p><strong>Endereço:</strong> Avenida Vereador José Diniz, 11322, São Paulo - SP, 04604-001</p>
+        <p><strong>Telefone/WhatsApp:</strong> +55 11 97328-8372</p>
+        <p><strong>E-mail:</strong> <a href="mailto:joseosvaldosouza99@gmail.com">joseosvaldosouza99@gmail.com</a></p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 InboxSender. Todos os direitos reservados.</p>
+        <p><a href="termos-de-uso.html">Termos de Uso</a> | <a href="politica-privacidade.html">Política de Privacidade</a> | <a href="politica-cookies.html">Política de Cookies</a></p>
+    </div>
+</body>
+</html>
